@@ -1,7 +1,7 @@
 ﻿using CompararListaDeNumeros;
 using Newtonsoft.Json;
 
-string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\input.json");
+string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\listas.json");
 string json = File.ReadAllText(Path.GetFullPath(filePath));
 DadosListas dadosListas = JsonConvert.DeserializeObject<DadosListas>(json);
 
